@@ -3,13 +3,13 @@ array = ["fiddleheads","okra","kohlrabi"]
 def oxford_comma(array)
   puts array.join(", ")
   if array.length == 1
-    puts array
+    return array
   elsif
     array.length == 2
-    puts array.join(" and ")
+    return array.join(" and ")
   elsif
     array.length >= 3
     last_item = ", and #{array.pop}"
-    puts array.join(", ") + last_item
+    return array.join(", ") + last_item
   end
 end
